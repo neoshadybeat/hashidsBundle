@@ -1,5 +1,5 @@
 {
-    "name": "neoshadybeat/hashids-bundle",
+    "name": "cayetanosoriano/hashids-bundle",
     "description": "Bundle for integration of hashids lib to the container",
     "keywords": ["hashids"],
     "type": "symfony-bundle",
