@@ -1,8 +1,5 @@
-karmacracyBundle
+hashidsBundle
 =============
-
-This Bundle, gives a wrapper to [karmacracy-php](https://github.com/CayetanoSoriano/karmacracy-php.git) API lib
-
 
 
 ## Installation
@@ -16,7 +13,7 @@ your dependencies in a `composer.json` file:
 ``` json
 {
     "require": {
-        "neoshadybeat/hashids-bundle": "dev-master"
+        "cayetanosoriano/hashids-bundle": "dev-master"
     }
 }
 ```
