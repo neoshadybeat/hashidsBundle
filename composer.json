@@ -1,0 +1,17 @@
+{
+    "name": "neoshadybeat/hashids-bundle",
+    "description": "Bundle for integration of hashids lib to the container",
+    "keywords": ["hashids"],
+    "type": "symfony-bundle",
+    "require": {
+        "hashids/hashids": "0.3",
+        "symfony/symfony": ">= 2.0.0",
+    },
+    "authors": [
+        {
+            "name": "Cayetano Soriano",
+            "email": "neoshadybeat@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

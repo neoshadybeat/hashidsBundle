@@ -1,0 +1,7 @@
+parameters:
+    Hashids.class:      Hashids\Hashids
+
+services:
+    hashids:
+        class:        "%Hashids.class%"
+        arguments:    ["%cayetanosoriano_hashids.salt%", "%cayetanosoriano_hashids.min_hash_length%", "%cayetanosoriano_hashids.alphabet%"]
