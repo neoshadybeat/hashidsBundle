@@ -5,7 +5,7 @@
     "type": "symfony-bundle",
     "license": "MIT",
     "require": {
-        "hashids/hashids": "0.3",
+        "hashids/hashids": "0.3.*@dev",
         "symfony/symfony": ">= 2.0.0"
     },
     "authors": [
