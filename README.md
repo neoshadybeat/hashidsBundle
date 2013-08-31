@@ -1,7 +1,7 @@
 hashidsBundle
 =============
 
-##This is a bundle to use http://www.hashids.org/ has a service
+##This is a bundle to use http://www.hashids.org/ as a service
 
 ## Installation
 
