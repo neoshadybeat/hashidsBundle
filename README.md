@@ -1,6 +1,7 @@
 hashidsBundle
 =============
 
+#This is a bundle to use http://www.hashids.org/ has a service
 
 ## Installation
 
@@ -49,7 +50,9 @@ public function registerBundles()
 ###Add the following to your config.yml
 ```
 cayetanosoriano_hashids:
-    salt: "randomsalt"
+    salt: "randomsalt" #optional
+    min_hash_length: 10 #optional
+    alphabet: "abcd..." #optional
 ```
 
 ### Then use the service
