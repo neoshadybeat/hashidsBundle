@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "license": "MIT",
     "require": {
-        "hashids/hashids": "dev-master",
+        "hashids/hashids": "0.3.*@dev",
         "symfony/symfony": ">= 2.0.0"
     },
     "authors": [
@@ -15,7 +15,6 @@
             "email": "neoshadybeat@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-0": { "cayetanosoriano\\HashidsBundle": "" }
     },
