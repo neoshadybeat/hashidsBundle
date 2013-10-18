@@ -3,7 +3,6 @@
     "description": "Bundle for integration of hashids lib to the container",
     "keywords": ["hashids"],
     "type": "symfony-bundle",
-    "minimum-stability": "dev",
     "license": "MIT",
     "require": {
         "hashids/hashids": "0.3.*@dev",
