@@ -41,7 +41,7 @@ public function registerBundles()
     $bundles = array(
         // ...
 
-            new cayetanosoriano\HashidsBundle\cayetanosorianoKarmacracyBundle(),
+            new cayetanosoriano\HashidsBundle\cayetanosorianoHashidsBundle(),
     );
 }
 ```
