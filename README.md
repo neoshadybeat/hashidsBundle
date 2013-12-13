@@ -1,3 +1,5 @@
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/3ad118ec-c1b8-44e1-b92c-c51369a52bc3/mini.png)](https://insight.sensiolabs.com/projects/3ad118ec-c1b8-44e1-b92c-c51369a52bc3)
+
 hashidsBundle
 =============
 
