@@ -7,7 +7,7 @@
     "license": "MIT",
     "require": {
         "hashids/hashids": "0.3.*@dev",
-        "symfony/framework-standard-edition": "v2.1.0"
+        "symfony/framework-standard-edition": "~v2.1.0"
         },
     "authors": [
         {
