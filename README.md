@@ -8,7 +8,7 @@ hashidsBundle
 ## Installation
 
 
-#### Symfony 2.1.x < 2.4.x: Composer
+#### Symfony 2.1.x <= 2.4.x: Composer
 
 [Composer](http://packagist.org/about-composer) is a project dependency manager for PHP. You have to list
 your dependencies in a `composer.json` file:
