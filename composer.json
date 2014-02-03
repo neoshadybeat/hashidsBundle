@@ -7,7 +7,7 @@
     "license": "MIT",
     "require": {
         "hashids/hashids": "0.3.*@dev",
-        "symfony/framework-standard-edition": ">= 2.1.0"
+        "symfony/framework-bundle": ">= 2.1.0"
         },
     "authors": [
         {
@@ -15,7 +15,6 @@
             "email": "neoshadybeat@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "autoload": {
         "psr-0": { "cayetanosoriano\\HashidsBundle": "" }
     },
