@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "license": "MIT",
     "require": {
-        "hashids/hashids": "0.3.*@dev",
+        "hashids/hashids": "0.3.x-dev",
         "symfony/framework-standard-edition": ">= 2.1.0"
         },
     "authors": [
