@@ -61,6 +61,8 @@ cayetanosoriano_hashids:
 ```
 $kcy = $this->get('hashids');
 ```
+
+### license
 ```
 Copyright (c) 2015 You <you$domain,com>
 
