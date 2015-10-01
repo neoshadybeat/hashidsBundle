@@ -64,7 +64,7 @@ $kcy = $this->get('hashids');
 
 ### license
 ```
-Copyright (c) 2015 You <you$domain,com>
+Copyright (c) 2015 neoshadybeat[at]gmail.com
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
