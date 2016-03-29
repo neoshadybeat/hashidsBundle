@@ -3,17 +3,16 @@
 hashidsBundle
 =============
 
-##This is a bundle to use http://www.hashids.org/ as a service
+## This is a bundle to use http://www.hashids.org/ as a service
 
 ## Installation
-
 
 #### Symfony 2.1.x <= 2.4.x: Composer
 
 [Composer](http://packagist.org/about-composer) is a project dependency manager for PHP. You have to list
 your dependencies in a `composer.json` file:
 
-``` json
+```json
 {
     "require": {
         "cayetanosoriano/hashids-bundle": "dev-master"
@@ -22,7 +21,7 @@ your dependencies in a `composer.json` file:
 ```
 To actually install in your project, download the composer binary and run it:
 
-``` bash
+```bash
 wget http://getcomposer.org/composer.phar
 # or
 curl -O http://getcomposer.org/composer.phar
@@ -34,7 +33,7 @@ php composer.phar install
 
 Finally, enable the bundle in the kernel:
 
-``` php
+```php
 <?php
 // app/AppKernel.php
 
@@ -49,8 +48,9 @@ public function registerBundles()
 ```
 
 ## Configuration
-###Add the following to your config.yml
-```
+
+### Add the following to your config.yml
+```yaml
 cayetanosoriano_hashids:
     salt: "randomsalt" #optional
     min_hash_length: 10 #optional
@@ -58,11 +58,29 @@ cayetanosoriano_hashids:
 ```
 
 ### Then use the service
-```
+```php
 $kcy = $this->get('hashids');
 ```
 
-### license
+## Optional features
+
+### Twig extension
+
+#### Declare the service to your services.yml
+```yaml
+twig.hashids_extension:
+    class: cayetanosoriano\HashidsBundle\Twig\HashidsExtension
+    arguments: ["@hashids"]
+    public: false
+    tags: [{ name: twig.extension }]
+```
+
+#### Use the extension in your Twig templates
+```twig
+<a href="{{ path('user_profile', {'hashid': user.id|hashid_encode}) }}">View Profile</a>
+```
+
+### License
 ```
 Copyright (c) 2015 neoshadybeat[at]gmail.com
 
