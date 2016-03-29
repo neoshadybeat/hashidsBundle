@@ -88,7 +88,7 @@ the Hashid encoded version.
 
 ```php
 /**
- * @Route("/user/{id}", requirements={"id"="\d+"}, name="user_profile")
+ * @Route("/user/{id}", requirements={"id"="\d+"}, name="user_view")
  */
 public function viewAction(User $user)
 {
@@ -103,7 +103,7 @@ version of `id`.
 
 ```php
 /**
- * @Route("/user/{hashid}", requirements={"hashid"="[A-Za-z0-9_-]+"}, name="user_profile")
+ * @Route("/user/{hashid}", requirements={"hashid"="[A-Za-z0-9_-]+"}, name="user_view")
  */
 public function viewAction(User $user)
 {
