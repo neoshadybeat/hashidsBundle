@@ -62,6 +62,55 @@ cayetanosoriano_hashids:
 $kcy = $this->get('hashids');
 ```
 
+## Optional features
+
+### Doctrine param converter
+
+The included Doctrine param converter extends the one included in
+(SensioFrameworkExtraBundle)[http://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html]
+to automate decoding of Hashids in routes before fetching the object.
+
+#### Overload the default service to your services.yml
+
+```yaml
+sensio_framework_extra.converter.doctrine.orm:
+    class: cayetanosoriano\HashidsBundle\Request\ParamConverter\HashidsDoctrineParamConverter
+    arguments: ["@hashids", "@doctrine"]
+    tags: [{ name: request.param_converter, converter: doctrine.orm }]
+```
+
+#### Specify the Hashid in your route
+
+The following two examples are equivalent, using either the raw database `id` or
+the Hashid encoded version.
+
+##### Raw `id` (standard SensioFrameworkExtraBundle behaviour)
+
+```php
+/**
+ * @Route("/user/{id}", requirements={"id"="\d+"}, name="user_view")
+ */
+public function viewAction(User $user)
+{
+…
+}
+```
+
+##### Hashid
+
+The `hashid` request parameter will be automatically recognised as an encoded
+version of `id`.
+
+```php
+/**
+ * @Route("/user/{hashid}", requirements={"hashid"="[A-Za-z0-9_-]+"}, name="user_view")
+ */
+public function viewAction(User $user)
+{
+…
+}
+```
+
 ### license
 ```
 Copyright (c) 2015 neoshadybeat[at]gmail.com
