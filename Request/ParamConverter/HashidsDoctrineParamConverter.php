@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 class HashidsDoctrineParamConverter extends DoctrineParamConverter
 {
     /**
-     * @var Hashids\Hashids
+     * @var Hashids
      */
     protected $hashids;
 
