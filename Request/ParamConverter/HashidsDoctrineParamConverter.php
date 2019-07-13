@@ -36,7 +36,9 @@ class HashidsDoctrineParamConverter extends DoctrineParamConverter
         if ($request->attributes->has('hashid')) {
             $id = $request->attributes->get('hashid');
             $decoded = $this->hashids->decode($id);
-            return $decoded[0];
+            if (array_key_exists(0, $decoded) {
+                return $decoded[0];
+            }
         }
 
         return false;
