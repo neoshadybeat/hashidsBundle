@@ -17,8 +17,13 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('cayetanosoriano_hashids');
+        $treeBuilder = new TreeBuilder('cayetanosoriano_hashids');
+        if (\method_exists($treeBuilder, 'getRootNode')) {
+            $rootNode = $treeBuilder->getRootNode();
+        } else {
+            // symfony/config <= 4.1
+            $rootNode = $treeBuilder->root('cayetanosoriano_hashids');
+        }
         $rootNode
             ->children()
                 ->scalarNode('salt')->defaultNull()->end()
